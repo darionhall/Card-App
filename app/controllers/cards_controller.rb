@@ -1,8 +1,8 @@
 class CardsController < ApplicationController
 
   before_action :signed_in_user
-
-  before_action :set_card, only: [:show, :edit, :update, :destroy, :toggle_completed]
+  before_action :set_card, only: [:toggle_completed, :show, :edit, :update, :destroy]
+  before_action :verify_correct_user, only: [:show, :edit, :update, :destroy]
 
   # GET /cards
   # GET /cards.json
@@ -66,11 +66,11 @@ class CardsController < ApplicationController
   end
 
   def toggle_completed
-    @todo.completed = !@todo.completed
+    @card.completed = !@card.completed
     respond_to do |format|
-      if @todo.save
-        format.html { redirect_to todos_path }
-        format.json { render :show, status: :ok, location: @todo }
+      if @card.save
+        format.html { redirect_to cards_path }
+        format.json { render :show, status: :ok, location: @card }
       else
         # show some error message
       end
@@ -79,6 +79,11 @@ class CardsController < ApplicationController
 
 
   private
+
+    def verify_correct_user
+       @card = current_user.cards.find_by(id: params[:id])
+       redirect_to root_url, notice: 'Access Denied!' if @todo.nil?
+    end
     # Use callbacks to share common setup or constraints between actions.
     def set_card
       @card = Card.find(params[:id])

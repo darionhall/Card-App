@@ -1,11 +1,13 @@
 class CardsController < ApplicationController
+
+  before_action :signed_in_user
+
   before_action :set_card, only: [:show, :edit, :update, :destroy, :toggle_completed]
 
   # GET /cards
   # GET /cards.json
   def index
-    # @cards = Card.all
-    @cards = Card.order(created_at: :desc)
+    @cards = current_user.cards.order(created_at: :desc)
   end
 
   # GET /cards/1
@@ -26,6 +28,7 @@ class CardsController < ApplicationController
   # POST /cards.json
   def create
     @card = Card.new(card_params)
+    @card.user = current_user
 
     respond_to do |format|
       if @card.save

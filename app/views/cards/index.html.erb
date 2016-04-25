@@ -30,17 +30,8 @@
             <td><%= card.phone %></td>
             <td><%= card.websites %></td>
             <td><%= card.skills %></td>
-             <!-- <td><%= card.completed %></td> -->
-<!--             <td>
-            <%= link_to("/cards/#{card.id}/toggle_completed") do %>
-              <% if card.completed %>
-                <span class="glyphicon glyphicon-ok"></span>
-              <% else %>
-                <span class="glyphicon glyphicon-unchecked"></span>
-              <% end %>
-             <% end %>
-            </td> -->
-            <td><%= link_to 'Show', card %></td>
+
+        <td><%= link_to 'Show', card %></td>
         <td><%= link_to 'Edit', edit_card_path(card) %></td>
         <td><%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       <% end %>

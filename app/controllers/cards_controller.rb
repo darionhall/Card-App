@@ -65,17 +65,6 @@ class CardsController < ApplicationController
     end
   end
 
-  # def toggle_completed
-  #   @card.completed = !@card.completed
-  #   respond_to do |format|
-  #     if @card.save
-  #       format.html { redirect_to cards_path }
-  #       format.json { render :show, status: :ok, location: @card }
-  #     else
-  #       # show some error message
-  #     end
-  #   end
-  # end
 
 
   private

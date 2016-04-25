@@ -25,6 +25,8 @@ gem 'bootstrap-generators', '~> 3.3.4'
 
 gem 'bcrypt', '~> 3.1.7'                # uncomment this line
 
+gem 'rails_12factor', group: :production
+
 group :development, :test do
   # Use pry with Rails console
   gem 'pry-rails'

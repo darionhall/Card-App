@@ -30,10 +30,10 @@
             <td><%= card.phone %></td>
             <td><%= card.websites %></td>
             <td><%= card.skills %></td>
-             <!-- <td><%= todo.completed %></td> -->
+             <!-- <td><%= card.completed %></td> -->
             <td>
-            <%= link_to("/todos/#{todo.id}/toggle_completed") do %>
-              <% if todo.completed %>
+            <%= link_to("/cards/#{card.id}/toggle_completed") do %>
+              <% if card.completed %>
                 <span class="glyphicon glyphicon-ok"></span>
               <% else %>
                 <span class="glyphicon glyphicon-unchecked"></span>

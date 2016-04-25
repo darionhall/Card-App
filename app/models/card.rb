@@ -2,10 +2,10 @@ class Card < ActiveRecord::Base
 
   belongs_to :user
 
-  validates :name presence: true
-  validates :profession presence: true
-  validates :email presence: true
-  validates :phone presence: true
+  validates :name, presence: true
+  validates :profession, presence: true
+  validates :email, presence: true
+  validates :phone, presence: true
   validates :websites
   validates :skills
 

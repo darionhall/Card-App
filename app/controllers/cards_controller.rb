@@ -82,7 +82,7 @@ class CardsController < ApplicationController
 
     def verify_correct_user
        @card = current_user.cards.find_by(id: params[:id])
-       redirect_to root_url, notice: 'Access Denied!' if @todo.nil?
+       redirect_to root_url, notice: 'Access Denied!' if @card.nil?
     end
     # Use callbacks to share common setup or constraints between actions.
     def set_card

@@ -18,9 +18,9 @@ ActiveRecord::Schema.define(version: 20160423235714) do
 
   create_table "cards", force: :cascade do |t|
     t.string   "name",       null: false
-    t.string   "profession"  null: false
+    t.string   "profession"
     t.string   "email",      null: false
-    t.integer  "phone",      null: false
+    t.integer  "phone"
     t.string   "websites"
     t.string   "skills"
     t.datetime "created_at", null: false

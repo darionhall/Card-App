@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
   match '/about', to: 'static_pages#about', via: 'get'
-  match 'cards/:id/toggle_completed', to: 'cards#toggle_completed', via: 'get'
+  # match 'cards/:id/toggle_completed', to: 'cards#toggle_completed', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

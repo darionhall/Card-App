@@ -2,7 +2,7 @@ class Card < ActiveRecord::Base
 
   belongs_to :user
 
-  validates :name, :profession, :email, :phone, presence: true
+  validates :card_name, :name, :profession, :email, :phone, presence: true
   # validates :websites
   # validates :skills
 

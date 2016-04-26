@@ -3,19 +3,14 @@
     <span class="glyphicon glyphicon-plus"></span>
     New Card
   <% end %>
-  <h1>Your Card(s)</h1>
+  <h1>Here's Your Card(s)</h1>
 </div>
 
 <div class="table-responsive cards">
   <table class="table table-hover">
     <thead>
       <tr>
-        <th>Name</th>
-        <th>Profession</th>
-        <th>Email</th>
-        <th>Phone</th>
-        <th>Websites</th>
-        <th>Skills</th>
+        <th>Card Name</th>
         <th>Show</th>
         <th>Edit</th>
         <th>Destroy</th>
@@ -24,12 +19,8 @@
 
     <tbody>
       <%= content_tag_for(:tr, @cards) do |card| %>
-            <td><%= card.name %></td>
-            <td><%= card.profession %></td>
-            <td><%= card.email %></td>
-            <td><%= card.phone %></td>
-            <td><%= card.websites %></td>
-            <td><%= card.skills %></td>
+        <td><%= card.card_name %></td>
+
 
         <td><%= link_to 'Show', card %></td>
         <td><%= link_to 'Edit', edit_card_path(card) %></td>

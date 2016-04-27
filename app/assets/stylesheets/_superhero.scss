@@ -5,13 +5,19 @@
 @import url($web-font);
 
 // ===========================================================================
-
+.show #wrapper {
+    background-color: #ffffff;
+    border: medium none;
+    margin: 20px auto;
+    padding: 0;
+}
 
 
 //Card =======================================================================
 
 main {
   border-radius: 25px;
+
 }
 
 .card {

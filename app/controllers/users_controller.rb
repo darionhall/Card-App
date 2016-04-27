@@ -29,6 +29,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
+
     respond_to do |format|
       if @user.save
         sign_in @user
@@ -68,6 +69,10 @@ class UsersController < ApplicationController
 
 
   private
+
+
+# Use strong_parameters for attribute whitelisting
+# Be sure to update your create() and update() controller methods.
 
     def verify_correct_user
       user = User.find_by(id: params[:id])

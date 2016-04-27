@@ -11,40 +11,32 @@
  <h1>Here's My Card</h1>
 </div>
 
+<!-- From Bootstrap, this is a div, class="card" to form a visual outline of a business/professional card -->
 
 <div class="card">
-  <img class="card-img-top" data-src="..." alt="Card image cap">
+<!--   <img class="card-img-top" data-src="..." alt="Card image cap"> -->
   <div class="card-block">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+<!--     <h4 class="card-title"></h4>
+    <p class="card-text">"Text Here"</p> -->
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Vestibulum at eros</li>
+<!--  Example to form more list items below
+   <li class="list-group-item">  </li> -->
+    <li class="list-group-item"> <h2><b><dd><%= @card.name %></dd></b></h2> </li>
+    <li class="list-group-item"> <dd><%= @card.profession %></dd> </li>
+    <li class="list-group-item">  <dt>Email:</dt>
+  <dd><%= @card.email %></dd></li>
+    <li class="list-group-item">  <dt>Phone:</dt>
+  <dd><%= @card.phone %></dd></li>
+    <li class="list-group-item">   <dt>Websites:</dt>
+  <dd><%= @card.websites %></dd></li>
+    <li class="list-group-item">  <dt>Skills:</dt>
+  <dd><%= @card.skills %></dd></li>
   </ul>
-  <div class="card-block">
+<!--   <div class="card-block">
     <a href="#" class="card-link">Card link</a>
     <a href="#" class="card-link">Another link</a>
-  </div>
-</div>
-
-
-<div class="card">
-  <img class="card-img-top" data-src="..." alt="Card image cap">
-  <div class="card-block">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Vestibulum at eros</li>
-  </ul>
-  <div class="card-block">
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-  </div>
+  </div> -->
 </div>
 
 <dl class="dl-vertical">

@@ -32,11 +32,23 @@ input[type="radio"], input[type="checkbox"] {
 main {
   margin: 20px auto;
   width: 800px;
+  border-radius: 25px;
+}
+
+.cards {
+    border: 1px solid;
+    border-radius: 25px;
 }
 
 .cards {
   th, td {
     text-align:center
   }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  //.card.name {}
 }
 

@@ -10,7 +10,7 @@ Deployed App:
 
 USER STORIES
 
-* I usually run out of business cards at the most inopportune time. I want assurance I'll never run out again.
+* I usually run out of business cards at the most inopportune time.
 * I would like to exchange business cards with people who live in other cities.
 * I'm an employer and while I love networking, I don't need all the business cards I receive. Is there an application that will allow me to exchange business cards, but also delete them?
 * Electronic business cards are earth friendly.

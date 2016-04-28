@@ -23,15 +23,18 @@
 }
 
 .new {
-  background: url("http://medianovak.com/wp-content/uploads/2015/04/effective-business-card-guidelines-3.jpg");
+  background: url("http://www.cardfaves.com/images/2014/armarion-3.jpg");
   background-size: cover;
   background-position: justify;
 }
 
 .about {
-  background: url("http://gdj.gdj.netdna-cdn.com/wp-content/uploads/2014/12/Free+Minimal+Business+Card+PSD+Template.jpg");
+  background: url("http://fw007721-flywheel.netdna-ssl.com/wp-content/uploads/03-Luka-%C5%BDani%C4%87-Photography-Die-cut-Business-Card-by-Studio-8585-on-BPO.jpg");
   background-size: cover;
   background-position: justify;
+  color: white;
+  background-color: black; opacity: 0.75;
+  font-size: 25px;
 }
 
 body {
@@ -40,6 +43,7 @@ body {
   background-size: cover;
   background-position: justify;
 }
+
 
 .page-header {
   a.btn {

@@ -1,28 +1,59 @@
-== README
+            Here's My Card App
+LINKS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Wireframes:
+[Wireframe, Mockups, & Site Map](https://docs.google.com/document/d/1LZMMGCeVrln94jtH_g3W5kS7G2w4Rm0awfF96FLlKkY/edit)
 
-Things you may want to cover:
-
-* Ruby version 2.2.4
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Deployed App:
+[Here's My Card App] (https://heres-your-card-app.herokuapp.com/)
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+USER STORIES
+
+* I usually run out of business cards at the most inopportune time. I want assurance I'll never run out again.
+* I would like to exchange business cards with people who live in other cities.
+* I'm an employer and while I love networking, I don't need all the business cards I receive. Is there an application that will allow me to exchange business cards, but also delete them?
+* Electronic business cards are earth friendly.
+
+OBJECTIVE
+
+This app will allow the user to create multiple business and professional cards electronically to share through email. This way the user will always have a card available to share. The user may have more than one profession, talent, and/or career path. With Here's My Card, the user will be maximaze networking opportunities.
+
+DESIGN
+
+Most of the design and format was set up from the Todos App Example developed by Dr. Mike Hopper. Below you'll find a link to my mockups & site map, as well as a link to the how to build the Todos App Page:
+
+[Wireframe, Mockups, & Site Map](https://docs.google.com/document/d/1LZMMGCeVrln94jtH_g3W5kS7G2w4Rm0awfF96FLlKkY/edit)
+
+[How to Build a Todo App on Rails by Dr. Mike Hopper]
+(https://github.com/ATL-WDI-Exercises/rails_todo_app)
+
+CONFIGURATIONS
+
+
+
+SYSTEM DEPENDENCIES
+
+  bcrypt (3.1.7)
+  better_errors
+  bootstrap-generators (3.3.4)
+  byebug
+  coffee-rails (4.1.0)
+  jbuilder (2.0)
+  jquery-rails
+  pg
+  pry-rails
+  rails (4.2.1)
+  rails_12factor
+  sass-rails (5.0)
+  sdoc (0.4.0)
+  spring
+  turbolinks
+  uglifier (1.3.0)
+  web-console (~> 2.0)
+
+DEPLOYMENT:
+
+The Here's My Card application is deployed through Heroku. The following link will lead you to the deployed app:
+
+https://heres-your-card-app.herokuapp.com/

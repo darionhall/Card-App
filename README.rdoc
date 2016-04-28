@@ -21,15 +21,24 @@ This app will allow the user to create multiple business and professional cards 
 
 DESIGN
 
-Most of the design and format was set up from the Todos App Example developed by Dr. Mike Hopper. Below you'll find a link to my mockups & site map, as well as a link to the how to build the Todos App Page:
+With huge help from Bootstrap, SASS, and my instructor (Dr. Hopper), the format and most of the styling was built using a template app called Todos. The background images were found using the google images search engine. Buttons and nav-bar are courtesy Bootstrap. Formatting credit goes to Dr. Mike Hopper.
+
+
+
+CONFIGURATIONS
+
+Using the Todo CRUD App Example developed by Dr. Mike Hopper, my application was built by:
+Generating a project with rails and postgreSQL in Bash; Adding Ruby Gems; Configuring Scaffold Generator; Adding in SASS & Bootstrap; Adding a MVC pattern for both the "User" and "Cards" models; Implementing a Sessions Controller; Adding Signup, Login/Logout, and Security; and finally deploying the application to Heroku.
+
+Below you'll find a link to my mockups & site map, as well as a link to the Todos CRUD App Page:
 
 [Wireframe, Mockups, & Site Map](https://docs.google.com/document/d/1LZMMGCeVrln94jtH_g3W5kS7G2w4Rm0awfF96FLlKkY/edit)
 
 [How to Build a Todo App on Rails by Dr. Mike Hopper]
 (https://github.com/ATL-WDI-Exercises/rails_todo_app)
 
-CONFIGURATIONS
-
+Technology used includes: Ruby 2.2, Rails 4.2, PostgreSQL 9.4, Twitter Bootstrap 3.3, SASS 3.4
+bootstrap-generators 3.3. Here's My Card is a Ruby on Rails application. The rails scaffold method was used to create a foundation for the application to be built. Scaffoldling With Rails as the framework, the database is built and manipulated with SQL, PostgreSQL, and Active Record.
 
 
 SYSTEM DEPENDENCIES
@@ -57,3 +66,4 @@ DEPLOYMENT:
 The Here's My Card application is deployed through Heroku. The following link will lead you to the deployed app:
 
 https://heres-your-card-app.herokuapp.com/
+

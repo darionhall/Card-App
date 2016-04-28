@@ -6,8 +6,40 @@
 @import "bootstrap.scss";
 @import "superhero.scss";
 
+.cardcase {
+  background: url("http://preview.turbosquid.com/Preview/2014/05/24__15_25_11/Business%20Card%20Holder%20Plain%2002.jpg37beb22c-de2b-4b26-9737-cf5fbcf8b332HD.jpg");
+  background-size: cover;
+  background-position: justify;
+}
+
+.exchange {
+  background: url("http://ivanmisner.com/wp-content/uploads/2012/11/BizCardExchange1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.edit {
+  background: #1D282F;
+}
+
+.new {
+  background: url("http://medianovak.com/wp-content/uploads/2015/04/effective-business-card-guidelines-3.jpg");
+  background-size: cover;
+  background-position: justify;
+}
+
+.about {
+  background: url("http://orig07.deviantart.net/a852/f/2011/018/3/6/simple_dark_psd_business_card_by_freepsdownload-d37gor3.png");
+  background-size: cover;
+  background-position: justify;
+}
+
+
 body {
   padding-top: $navbar-height + 10px;
+  background: url("http://www.topdesignmag.com/wp-content/uploads/2010/12/295.jpg");
+  background-size: cover;
+  background-position: justify;
 }
 
 .page-header {
@@ -17,6 +49,13 @@ body {
 
   a.btn + a.btn {
     margin-right: 8px;
+  }
+}
+
+.index card {
+    th, td {
+    text-align:center;
+    background: black;
   }
 }
 
@@ -31,9 +70,11 @@ main {
   width: 800px;
 }
 
-.cards {
+.card {
     border: 1px solid;
     border-radius: 25px;
+    padding: 15px 15px 2px 15px;
+    background-color: white; opacity: 0.75;
 }
 
 .cards {

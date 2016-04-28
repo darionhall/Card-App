@@ -44,6 +44,12 @@ body {
   background-position: justify;
 }
 
+.text-center, .jumbotron {
+  border: 1px solid;
+  border-radius: 25px;
+  padding: 15px 15px 15px 15px;
+  background-color: navy blue; opacity: 0.9;
+}
 
 .page-header {
   a.btn {

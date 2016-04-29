@@ -28,8 +28,6 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(user_params)
-
-
     respond_to do |format|
       if @user.save
         sign_in @user
@@ -56,6 +54,7 @@ class UsersController < ApplicationController
       end
     end
   end
+
 
   # DELETE /users/1
   # DELETE /users/1.json

@@ -10,7 +10,7 @@ class CardsController < ApplicationController
     @cards = current_user.cards.order(created_at: :desc)
   end
 
-  # GET /cards/1
+  # GET /cards/#id => example /cards/1
   # GET /cards/1.json
   def show
   end
@@ -20,7 +20,7 @@ class CardsController < ApplicationController
     @card = Card.new
   end
 
-  # GET /cards/1/edit
+  # GET /cards/#id/edit
   def edit
   end
 
@@ -29,7 +29,7 @@ class CardsController < ApplicationController
   def create
     @card = Card.new(card_params)
     @card.user = current_user
-
+    # respond to user request for new form, save it, redirect to card index page
     respond_to do |format|
       if @card.save
         format.html { redirect_to cards_path, notice: 'Card was successfully created.' }
@@ -44,6 +44,7 @@ class CardsController < ApplicationController
   # PATCH/PUT /cards/1
   # PATCH/PUT /cards/1.json
   def update
+    #espond to user request for specific card id, to both edit & save it, then redirect to card index page
     respond_to do |format|
       if @card.update(card_params)
         format.html { redirect_to cards_path, notice: 'Card was successfully updated.' }
@@ -68,7 +69,7 @@ class CardsController < ApplicationController
 
 
   private
-
+  #security, verifying the correct user has passed authN, and authZ is given to their account
     def verify_correct_user
        @card = current_user.cards.find_by(id: params[:id])
        redirect_to root_url, notice: 'Access Denied!' if @card.nil?
@@ -78,7 +79,7 @@ class CardsController < ApplicationController
       @card = Card.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
+    # the below is done so no one else who has access to code can change this
     def card_params
       params.require(:card).permit(:card_name, :name, :profession, :email, :phone, :websites, :skills)
     end
